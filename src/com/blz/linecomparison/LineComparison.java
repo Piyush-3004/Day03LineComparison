@@ -36,7 +36,7 @@ public class LineComparison {
 		System.out.println("enter y2");
 
 		int ny2 = sc.nextInt();
-		
+
 		sc.close();
 
 		double len = Math.sqrt((nx2 - nx1) * (nx2 - nx1) + (ny2 - ny1) * (ny2 - ny1));
@@ -47,7 +47,20 @@ public class LineComparison {
 
 		if (lengthOne.equals(lengthTwo)) {
 			System.out.println("Line 2 is equal to line one");
+
+		int x = lengthOne.compareTo(lengthTwo);
+
+		if (x < 0) 
+				System.out.println("Line one is smaller"); 
+		else if (x > 0)
+				System.out.println("Line one is Greater");
+		else
+				System.out.println("Lines ae equal");
+
+			
+			}
+
 		}
 
 	}
-}
+
